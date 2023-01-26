@@ -18,10 +18,17 @@ public class ListtaLibros {
 
         ArrayList<Libro>libros = new ArrayList<>();
 
-        libros.add(new Libro("Piratas del caribe"));
-        System.out.println(libros);
-
-
+        int cantidad = contadorLibros(libros);
+        System.out.println("la cantidad de libros es : " + cantidad);
 
     }
+    public static int contadorLibros(ArrayList<Libro>libros ){
+
+        return libros.size();
+    }
+
+
+
+
+
 }
