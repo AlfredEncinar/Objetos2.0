@@ -12,6 +12,7 @@ package Ejercicio9U4;
 // encuentra el libro (-1 si no lo encuentra).
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ListtaLibros {
     public static void main(String[] args) {
@@ -21,14 +22,31 @@ public class ListtaLibros {
         int cantidad = contadorLibros(libros);
         System.out.println("la cantidad de libros es : " + cantidad);
 
+
+
+
+
     }
     public static int contadorLibros(ArrayList<Libro>libros ){
 
         return libros.size();
     }
 
+    public void insert(int a , Libro objeto){
+        Scanner sc = new Scanner(System.in);
 
+        insert(a = sc.nextInt(),objeto);
+    }
 
+    public Libro removeEn(int a){
+        Scanner sc = new Scanner(System.in);
+        return removeEn(a = sc.nextInt());
+    }
 
+    public Libro getEn(int a){
+        Scanner sc = new Scanner(System.in);
+
+        return getEn(a = sc.nextInt());
+    }
 
 }
